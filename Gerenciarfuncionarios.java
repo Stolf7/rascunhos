@@ -20,7 +20,7 @@ public class GerenciarFuncionarios {
             System.out.println("9 - Sair");
             System.out.println("O que voce deseja: ");
 
-            opcao = Integer.parseInt(gf.scanf.nextLine());
+            opcao = Integer.parseInt(gf.sc.nextLine());
 
             switch (opcao) {
                 case 1:
@@ -40,16 +40,17 @@ public class GerenciarFuncionarios {
 
     public void execCadastrar(){
         System.out.println("Salario: ");
-        double salario = sc.nextLine();
+        double salario = Integer.parseInt(sc.nextLine());
         System.out.println("Registro: ");
-        long registro = sc.nextLine();
+        long registro = Integer.parseInt(sc.nextLine());
         System.out.println("Esta Ativo [SIM/NAO]: ");
-        boolean estaAtivo = sc.nextLine();
+        boolean estaAtivo = Boolean.parseBoolean(sc.nextLine());
         System.out.println("Nome: ");
         String nome = sc.nextLine();
         System.out.println("Departamento: ");
         String departamento = sc.nextLine();
         System.out.println("RG: ");
+        String rg = sc.nextLine();
     }
 
     public void execConsultarUnico(){
