@@ -1,10 +1,10 @@
 public class Funcionarios {
-    double salario;
-    long registro;
-    boolean estaAtivo;
-    String nome;
-    String departamento;
-    String rg;
+    private double salario;
+    private long registro;
+    private boolean estaAtivo;
+    private String nome;
+    private String departamento;
+    private String rg;
 
     public double getSalario() {
         return salario;
