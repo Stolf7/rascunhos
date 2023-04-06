@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-a
+
 public class GerenciarFuncionarios {
 
     public static List<Funcionarios> listaFuncionarios = new ArrayList<>();
