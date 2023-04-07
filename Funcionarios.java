@@ -6,6 +6,15 @@ public class Funcionarios {
     private String departamento;
     private String rg;
 
+    public Funcionarios(double salario, long registro, boolean estaAtivo, String nome,String Departamento, String rg) {
+        this.salario = salario;
+        this.registro = registro;
+        this.estaAtivo = estaAtivo;
+        this.nome = nome;
+        this.departamento = Departamento;
+        this. rg = rg;
+    }
+
     public double getSalario() {
         return salario;
     }
@@ -54,10 +63,6 @@ public class Funcionarios {
         this.rg = rg;
     }
 
-    public void bonificar(){
-        salario += salario;
-    }
-
     @Override
     public String toString() {
         return "Funcionario.." +
@@ -67,6 +72,20 @@ public class Funcionarios {
                 "Nome: '" + nome + '\'' +
                 "Departamento: '" + departamento + '\'' +
                 "RG: '" + rg;
+    }
+
+    public void imprimir() {
+        System.out.println("\nNome: " +nome+ "\nSalario: "+ salario + "\nSeu departamento é: " +departamento+ "\nRegistro: "+registro+"\nEsta ativo? "+estaAtivo+"\nRG: "+rg);
+    }
+
+    public void imprimirTodos() {
+        System.out.println("\nNome: " +nome+ " || Salario: "+ salario + " || Seu departamento é: " +departamento+ " || Registro: "+registro+" || Esta ativo? "+estaAtivo+" || RG: \n"+rg);
+}
+
+    public void bonificar(double valor) {
+        double bonificar = salario + valor;
+        System.out.println("Com uma bonificação de R$ "+ valor +" Seu novo salario será: R$ " + bonificar);
+        System.out.println("Bonificacao concluida com sucesso");
     }
 
 }
